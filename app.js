@@ -1,7 +1,10 @@
 (function () {
   'use strict';
   angular.module('LunchCheck', [])
-  .controller('LunchCheckController', function($scope){
+  .controller('LunchCheckController', LunchCheckController);
+  LunchCheckController.$inject = ["$scope"]
+
+  function LunchCheckController($scope){
     $scope.foodNames = ""
     $scope.message = ""
     $scope.checkifTooMuch = function () {
@@ -16,5 +19,5 @@
         }
       }
     };
-  });
+  };
 })();
