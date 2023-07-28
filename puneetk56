@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <title>Hello AngularJS</title>
+  </head>
+  <body>
+    <h1>Hello Coursera! This the the solution to Module 1 of Fullstack course 5</h1>
+    <div ng-controller="LunchCheckController">
+      What did you eat for lunch?
+      <div>
+        <input type="text" ng-model="foodNames">
+        <button type="button" ng-click="checkifTooMuch()">Check if too much</button>
+      </div>
+      <div>
+        {{message}}
+      </div>
+    </div>
+  </body>
+</html>
